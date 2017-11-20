@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Ch1\Ch1.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0"/>
+    <PackageReference Include="NUnit" Version="3.9.0"/>
+    <PackageReference Include="NSubstitute" Version="3.1.0"/>
+    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
