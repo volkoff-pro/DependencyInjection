@@ -8,7 +8,7 @@ namespace MainExecutable
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            IMessageWriter writer = new ConsoleMessageWriter();
+            IMessageWriter writer = new SecureMessageWriter(new ConsoleMessageWriter());
             var salutation = new Salutation(writer);
             salutation.Exclaim();
             Console.ReadLine();
